@@ -13,14 +13,7 @@ sub import {
 	eval join "\n",
 		"package $pkg;",
 		($child ? () : "\@${pkg}::ISA = 'Object::Tiny::RW::XS';"),
-			"use Class::XSAccessor getters => {",
-        (map {
-            defined and ! ref and /^[^\W\d]\w*$/s
-            or die "Invalid accessor name '$_'";
-            "'$_' => '$_',"
-        } @_),
-			"},",
-			"setters => {",
+			"use Class::XSAccessor accessors => {",
         (map {
             defined and ! ref and /^[^\W\d]\w*$/s
             or die "Invalid accessor name '$_'";
