@@ -1,4 +1,7 @@
 Revision history for Perl extension Object-Tiny-RW-XS
 
-.01 Wed 17 Jul 2013
+0.02 Wed 17 Jul 2013
+	- Added README
+
+0.01 Wed 17 Jul 2013
 	- Initial release
