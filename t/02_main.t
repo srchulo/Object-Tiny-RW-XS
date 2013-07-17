@@ -23,7 +23,7 @@ SCOPE: {
 SCOPE: {
 	my $empty = Foo->new;
 	isa_ok( $empty, 'Foo' );
-	isa_ok( $empty, 'Object::Tiny::RW::XS:XS' );
+	isa_ok( $empty, 'Object::Tiny::RW::XS' );
 	is( scalar( keys %$empty ), 0, 'Empty object is empty' );
 }
 
@@ -31,7 +31,7 @@ SCOPE: {
 SCOPE: {
 	my $object = Foo->new( foo => 1, bar => 2, baz => 3 );
 	isa_ok( $object, 'Foo' );
-	isa_ok( $object, 'Object::Tiny::RW::XS:XS' );
+	isa_ok( $object, 'Object::Tiny::RW::XS' );
 	is( scalar( keys %$object ), 3, 'Object contains expect elements' );
 	is( $object->foo, 1, '->foo ok' );
 	is( $object->bar, 2, '->bar ok' );
