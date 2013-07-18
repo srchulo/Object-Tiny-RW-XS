@@ -3,7 +3,7 @@ package Object::Tiny::RW::XS;
 use strict 'vars', 'subs';
 BEGIN {
 	require 5.004;
-	$Object::Tiny::RW::XS::VERSION = '0.02';
+	$Object::Tiny::RW::XS::VERSION = '0.03';
 }
 
 sub import {
