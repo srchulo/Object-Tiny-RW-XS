@@ -22,4 +22,14 @@ WriteMakefile(
 	($ExtUtils::MakeMaker::VERSION ge '6.30_00' ? (
 		LICENSE => 'perl',
 	) : ()),
+        'META_MERGE'         => {
+                'meta-spec' => { version => 2 },
+                resources => {
+                       repository => {
+                           type => 'git',
+                           url  => 'https://github.com/srchulo/Object-Tiny-RW-XS.git',
+                           web  => 'https://github.com/srchulo/Object-Tiny-RW-XS',
+                       },
+                },
+        },
 );
